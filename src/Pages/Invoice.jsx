@@ -26,14 +26,14 @@ const Invoice = () => {
                         <div className="card-body">
                             <div className="row clearfix">
                                 <div className="position-relative">
-                                    <a href="../Assets/file/get.pdf" type="button" className="btn btn-outline-primary float-end">Unduh</a>
+                                    <a href={PDF} type="button" className="btn btn-outline-primary float-end">Unduh</a>
                                 </div>
                                 <h5 className="fw-bold">Invoice</h5>
                                 <p className="text-muted">No invoice</p>
                             </div>
                             <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.216/pdf.worker.min.js">
 
-                                <Viewer fileUrl="../Assets/file/get.pdf" />
+                                <Viewer fileUrl={PDF} />
                             </Worker>
                         </div>
                     </div>

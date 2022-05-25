@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 
 export const Login = () => {
     const [email, setEmail] = useState('');
+    const [role, setRole] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [msg, setMsg] = useState('');
@@ -16,8 +17,14 @@ export const Login = () => {
         e.preventDefault();
         let result;
 
-        //navigate("/admin");
-        navigate("/");
+        if(role === 'admin'){
+            navigate("/admin");
+        }else{
+            navigate("/");
+        }
+
+        
+        
 
         // try {
         //     // let register = await axios.post('http://localhost:8000/api/login', {
@@ -78,6 +85,18 @@ export const Login = () => {
                         <div className="mb-3">
                             <label className="form-label">Password</label>
                             <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                        </div>
+
+                        <div className="mb-3">
+                            <label className="form-label">Role</label><br></br>
+                            <div className="form-check form-check-inline">
+                                <input className="form-check-input" type="radio" name="role" value="admin" onChange={(e) => setRole(e.target.value)} id="inlineRadio1" />
+                                <label className="form-check-label" for="inlineRadio1">admin</label>
+                            </div>
+                            <div className="form-check form-check-inline">
+                                <input className="form-check-input" type="radio" name="role" value="user" onChange={(e) => setRole(e.target.value)} id="inlineRadio2" />
+                                <label className="form-check-label" for="inlineRadio2">user</label>
+                            </div>
                         </div>
                         <div className="row px-3">
                             <button type="submit" className="btn btn-primary">Sign In</button>
