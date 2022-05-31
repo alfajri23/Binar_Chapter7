@@ -133,7 +133,7 @@ const Detail = (props) => {
                             
                             <h5 className="fw-bold">{item.name}/{item.category}</h5>
                             <div className="mb-4 text-muted">
-                                <small><BsPeople/> 4 orang</small>
+                                <small><BsPeople/> 5 orang</small>
                                 <small className="mx-2"><FiSettings/> Manual</small>
                                 <small> <FaRegCalendar/> Tahun 2020</small>
                             </div>
