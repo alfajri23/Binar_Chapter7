@@ -10,12 +10,12 @@ export const Login = () => {
     const [role, setRole] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [msg, setMsg] = useState('');
+    // const [msg, setMsg] = useState('');
     let navigate = useNavigate();
 
     const Auth = async (e) => {
         e.preventDefault();
-        let result;
+        // let result;
 
         if(role === 'admin'){
             navigate("/admin");

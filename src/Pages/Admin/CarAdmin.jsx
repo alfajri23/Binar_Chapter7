@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link,useLocation } from 'react-router-dom';
 import CardAdmin from '../../Components/Card/CardAdmin';
 import { Admin } from '../../Layout/Admin';
-import axios from 'axios';
+// import axios from 'axios';
 
 const CarAdmin = (props) => {
 
@@ -27,7 +27,7 @@ const CarAdmin = (props) => {
     }
   
     
-  },[]);
+  },[item]);
 
 
   return (
