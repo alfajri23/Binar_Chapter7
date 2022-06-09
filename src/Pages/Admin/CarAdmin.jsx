@@ -19,7 +19,7 @@ const CarAdmin = (props) => {
       let datas = await fetchs.json();
       setItem(item=datas)
     }
-    
+
     datas();
 
     if(location.state != null){
@@ -30,7 +30,7 @@ const CarAdmin = (props) => {
     }
   
     
-  },[item]);
+  },[]);
 
 
   return (
