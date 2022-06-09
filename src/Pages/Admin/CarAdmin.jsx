@@ -30,8 +30,6 @@ const CarAdmin = (props) => {
   },[]);
 
 
-}
-
   return (
     <Admin>
     {add && (
