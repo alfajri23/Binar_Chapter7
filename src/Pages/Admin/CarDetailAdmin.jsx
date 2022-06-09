@@ -12,13 +12,15 @@ const CarDetailAdmin = () => {
 
     let [item , setItem] = useState([]);
     
-    const datas = async () => {
-        let fetchs = await fetch('https://rent-cars-api.herokuapp.com/admin/car/' + id)
-        let datas = await fetchs.json();
-        setItem(item=datas)
-    }
+    
 
     useEffect(() => {
+
+        const datas = async () => {
+            let fetchs = await fetch('https://rent-cars-api.herokuapp.com/admin/car/' + id)
+            let datas = await fetchs.json();
+            setItem(item=datas)
+        }
 
         datas();
         

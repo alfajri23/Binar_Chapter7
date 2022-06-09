@@ -10,13 +10,16 @@ const CarAdmin = (props) => {
   let [item, setItem] = useState([]);
   let [add, setAdd] = useState(false);
 
-  const datas = async () => {
-    let fetchs = await fetch('https://rent-cars-api.herokuapp.com/admin/car/');
-    let datas = await fetchs.json();
-    setItem(item=datas)
- }
+  
 
   useEffect(() => {
+
+    const datas = async () => {
+      let fetchs = await fetch('https://rent-cars-api.herokuapp.com/admin/car/');
+      let datas = await fetchs.json();
+      setItem(item=datas)
+    }
+    
     datas();
 
     if(location.state != null){
