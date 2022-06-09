@@ -10,7 +10,7 @@ export const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [msg, setMsg] = useState('');
+    // const [msg, setMsg] = useState('');
     let navigate = useNavigate();
 
     const Auth = async (e) => {

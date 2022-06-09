@@ -1,7 +1,7 @@
 import Logins from '../Assets/Img/Login.png';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import jwt_decode from "jwt-decode";
+// import axios from 'axios';
+// import jwt_decode from "jwt-decode";
 
 import React, { useState } from 'react'
 

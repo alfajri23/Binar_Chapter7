@@ -5,7 +5,7 @@ import Panel from '../Components/Panel/Panel'
 import Footer from '../Components/Footer/Footer'
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import SpaceHero from '../Components/SpacerHero/SpaceHero'
+// import SpaceHero from '../Components/SpacerHero/SpaceHero'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

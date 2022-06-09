@@ -2,7 +2,6 @@ import React,{useState,useCallback} from 'react'
 import { Admin } from '../../Layout/Admin';
 import {useDropzone} from 'react-dropzone';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
 const CarAddAdmin = () => {
 
@@ -10,7 +9,6 @@ const CarAddAdmin = () => {
     const [files, setFiles] = useState("");
     const [nama, setNama] = useState("");
     const [harga, setHarga] = useState("");
-    const [status, setStatus] = useState(0);
     const [kategori, setKategori] = useState("");
     
 
@@ -18,7 +16,7 @@ const CarAddAdmin = () => {
         setFiles(acceptedFiles[0]);
     }, []);
 
-    const {acceptedFiles, getRootProps, getInputProps} = useDropzone({
+    const {getRootProps, getInputProps} = useDropzone({
         onDrop,
         // accept: {
         //     'image/png': ['.png'], 

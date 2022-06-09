@@ -1,11 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { BsPeople } from 'react-icons/bs';
-import { FiSettings } from 'react-icons/fi';
-import { FaRegCalendar,FaClock } from 'react-icons/fa';
 import { GoKey } from 'react-icons/go';
-import {connect} from 'react-redux';
-import axios from 'axios';
+
 
 const CardAdmin = (props) => {
 

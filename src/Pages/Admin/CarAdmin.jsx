@@ -13,7 +13,6 @@ const CarAdmin = (props) => {
   const datas = async () => {
     let fetchs = await fetch('https://rent-cars-api.herokuapp.com/admin/car/');
     let datas = await fetchs.json();
-    console.log(datas);
     setItem(item=datas)
  }
 
@@ -26,22 +25,10 @@ const CarAdmin = (props) => {
         setAdd(true);
       }
     }
-    console.log(location.state);
   
     
   },[]);
 
-  const deleteCar = async (id) => {
-
-    try {
-        let deleteStatus = await axios.delete('https://rent-cars-api.herokuapp.com/admin/car/'+ id);
-
-        let result = await deleteStatus;
-    } catch (error) {
-        if (error.response) {
-            //setMsg(error.response.data.msg);
-        }
-    }
 
 }
 

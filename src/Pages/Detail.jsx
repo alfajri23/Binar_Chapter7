@@ -10,7 +10,7 @@ import { FiSettings } from 'react-icons/fi';
 import { FaRegCalendar } from 'react-icons/fa';
 import {connect} from 'react-redux';
 import ReactPlayer from 'react-player/youtube'
-import ModalImage,{ Lightbox } from "react-modal-image";
+import { Lightbox } from "react-modal-image";
 
 const Detail = (props) => {
   const { id } = useParams();

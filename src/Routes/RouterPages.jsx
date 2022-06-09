@@ -4,7 +4,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import { Admin } from '../Pages/Admin';
+// import { Admin } from '../Pages/Admin';
 import Detail from '../Pages/Detail';
 import Home from '../Pages/Home';
 import HomeAdmin from '../Pages/Admin/HomeAdmin';
