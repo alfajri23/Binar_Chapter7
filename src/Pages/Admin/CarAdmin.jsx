@@ -30,7 +30,7 @@ const CarAdmin = (props) => {
     }
   
     
-  },[]);
+  },[item]);
 
 
   return (
